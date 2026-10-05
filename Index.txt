@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>☁ Cloud Computing Dashboard</h1>
+        <p>Cloud Engineering Management System</p>
+    </header>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#servers">Servers</a>
+        <a href="#storage">Storage</a>
+        <a href="#network">Network</a>
+    </nav>
+
+    <main id="dashboard">
+
+        <h2>Cloud Resources</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Virtual Machines</h3>
+                <p id="vm">12</p>
+            </div>
+
+            <div class="card">
+                <h3>Storage</h3>
+                <p>68%</p>
+            </div>
+
+            <div class="card">
+                <h3>Network</h3>
+                <p>42 GB/s</p>
+            </div>
+
+            <div class="card">
+                <h3>Servers</h3>
+                <p>8 Online</p>
+            </div>
+        </div>
+
+        <section id="servers">
+            <h2>Server Status</h2>
+            <div class="status">
+                <p>🟢 Web Server - Online</p>
+                <p>🟢 API Server - Online</p>
+                <p>🟡 Database Server - Warning</p>
+                <p>🟢 Storage Server - Online</p>
+            </div>
+        </section>
+
+        <section id="storage">
+            <h2>Storage</h2>
+            <div class="progress">
+                <div></div>
+            </div>
+            <p>68% of cloud storage is being used.</p>
+        </section>
+
+        <section id="network">
+            <h2>Network</h2>
+            <p>Network Traffic: <strong>42 GB/s</strong></p>
+            <button onclick="checkNetwork()">Check Network</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Cloud Computing Engineering</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
